@@ -1,0 +1,35 @@
+#version: '3.7'
+#
+#
+#services:
+#  frontend:
+#    build:
+#      context: .
+#      dockerfile: ./Dockerfile
+#      args:
+#         REGISTRY: http://192.168.100.71:4873
+#         PROXY: http://192.168.100.140:3128
+##        REGISTRY: ${REGISTRY}
+##        PROXY: ${PROXY}
+#    image: "${CI_REGISTRY}/${CI_REGISTRY_USER}/front_nomad_calculator:${CI_COMMIT_SHA}"
+#    networks:
+#    - masternet
+#
+#
+#    deploy:
+#      labels:
+#      - traefik.enable=true
+#      - traefik.http.middlewares.redirect-to-https.redirectscheme.scheme=https
+#      - traefik.http.routers.frontend-nomad-calculator-insecure.rule=Host(`nomad-calculator.new.auto-nomad.kz`)
+#      - traefik.http.routers.frontend-nomad-calculator-insecure.entrypoints=web
+#      - traefik.http.routers.frontend-nomad-calculator-insecure.middlewares=redirect-to-https@docker
+#      - traefik.http.routers.frontend-nomad-calculator-secure.entrypoints=websecure
+#      - traefik.http.routers.frontend-nomad-calculator-secure.rule=Host(`nomad-calculator.new.auto-nomad.kz`)
+#      - traefik.http.routers.frontend-nomad-calculator-secure.tls.certResolver=mytlschallenge
+#      - traefik.http.routers.frontend-nomad-calculator-secure.tls.domains=nomad-calculator.new.auto-nomad.kz
+#      - traefik.http.services.frontend-nomad-calculator.loadbalancer.server.port=80
+#
+#
+#networks:
+#  masternet:
+#    external: true

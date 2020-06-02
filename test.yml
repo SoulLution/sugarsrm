@@ -1,0 +1,31 @@
+version: '3'
+
+
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+      args:
+         REGISTRY: http://192.168.100.71:4873
+         PROXY: http://192.168.100.140:3128
+#        REGISTRY: ${REGISTRY}
+    image: "${CI_REGISTRY}/${CI_REGISTRY_USER}/front_green_ui:${CI_COMMIT_SHA}"
+    networks:
+    - masternet
+
+
+    deploy:
+      placement:
+       constraints: [node.hostname == backtest]
+      labels:
+        - "traefik.enable=true"
+        - "traefik.port=80"
+        - "traefik.docker.network=masternet"
+        - "traefik.frontend.rule=Host:green_ui.test.auto-nomad.kz"
+#        - "traefik.backend=frontend-nomad-calculator"
+
+
+networks:
+  masternet:
+    external: true

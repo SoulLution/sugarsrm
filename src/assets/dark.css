@@ -1,0 +1,102 @@
+:root{
+    --main: #262833;
+    --dark: #373946;
+    --white: #FFFFFF;
+
+    --primary: #39C874;
+    --success: #25A749;
+
+    --grey_1: #6D6F80;
+    --grey_2: #B7B8BE;
+    --grey_3: #CCCDD1;
+    --grey_4: #F0F0F6;
+
+    --error: #EF5755;
+    --warning: #EB9C70;
+    --calm: #567BFF;
+
+    --side: var(--dark);
+    --qr: var(--white);
+
+    --button_click: rgba(255,255,255,0.25);
+    --button_color: var(--white);
+    --button_border: var(--primary);
+    --button_bg: var(--primary);
+    --button_active_border: var(--success);
+    --button_active_bg: var(--success);
+    --button_disabled_color: var(--grey_2);
+    --button_disabled_border: var(--grey_4);
+    --button_disabled_bg: var(--grey_4);
+    --button_dark_bg: var(--dark);
+    --button_dark_active_bg: var(--grey_1);
+    --button_invisible_color: var(--primary);
+    --button_invisible_border: var(--dark);
+    --button_dash_color: var(--primary);
+    --button_dash_border: var(--dark);
+    --button_text_color: var(--grey_1);
+    --button_text_active_color: var(--calm);
+
+    --check_box_border: var(--dark);
+    --check_box_bg: var(--dark);
+    --check_box_avtive: var(--primary);
+    --check_box_color: var(--white);
+    --check_box_transparent_border: var(--dark);
+    --check_box_transparent_bg: transparent;
+
+    --date_border: var(--dark);
+    --date_bg: var(--dark);
+    --date_header_color: var(--grey_1);
+    --date_next_color: var(--grey_2);
+    --date_next_bg: var(--white);
+    --date_next_active_color: var(--white);
+    --date_next_active_bg: var(--primary);
+    --date_cell: var(--white);
+    --date_cell_bg: var(--grey_1);
+    --date_cell_week: var(--primary);
+    --date_cell_other_color: var(--grey_3);
+    --date_cell_now_color: var(--primary);
+    --date_cell_now_bg: var(--white);
+    --date_cell_active_color: var(--white);
+    --date_cell_active_bg: var(--primary);
+
+    --input_border: var(--grey_1);
+    --input_bg: transparent;
+    --input_color: var(--white);
+    --input_icon: var(--grey_2);
+    --input_icon_password: var(--grey_3);
+    --input_icon_active: var(--primary);
+    --input_active_border: var(--dark);
+    --input_active_bg: var(--main);
+    --input_placeholder: var(--grey_2);
+
+    --pagination_bg: var(--dark);
+    --pagination_bg_hover: var(--main);
+    --pagination_bg_active: var(--grey_1);
+    --pagination_color: var(--white);
+    --pagination_color_active: var(--white);
+
+    --progress_color: var(--primary);
+    --progress_bg: var(--dark);
+
+    --radio_color: var(--grey_2);
+    --radio_dot: var(--white);
+    --radio_border: var(--dark);
+    --radio_bg: var(--dark);
+    --radio_active_border: var(--primary);
+    --radio_active_bg: var(--primary);
+    --radio_transparent_dot: var(--primary);
+    --radio_transparent_border: var(--dark);
+    --radio_transparent_bg: transparent;
+    --radio_transparent_active_border: var(--dark);
+    --radio_transparent_active_bg: var(--dark);
+
+    --selector_color: var(--white);
+    --selector_border: var(--dark);
+    --selector_bg: var(--dark);
+    --selector_active_border: var(--primary);
+    --selector_active_bg: var(--primary);
+    --selector_transparent_border: var(--dark);
+    --selector_transparent_bg: transparent;
+    --selector_transparent_active: var(--primary);
+
+};

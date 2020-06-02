@@ -1,0 +1,34 @@
+$variables: (
+	sizes: (
+		_auto: auto
+	),
+	fonts: (
+		_0rem: 0rem,
+		_1rem: 1rem,
+		_2rem: 2rem,
+		_3rem: 3rem,
+		_4rem: 4rem,
+		_5rem: 5rem,
+		_6rem: 6rem,
+		_7rem: 7rem,
+	),
+	border: (
+		_0: 0px,
+		_1: 1px,
+	),
+	border_radius: (
+		_0: 0px,
+		_5: 5px,
+		_50p: 50%,
+		_10: 10px,
+		_15: 15px,
+	),
+	colors: (
+		_error: var(--error),
+		_primary: var(--primary),
+		_main: var(--main),
+		_input_active_bg: var(--input_active_bg),
+		_input_color: var(--input_color),
+		_input_icon: var(--input_icon),
+	),
+)

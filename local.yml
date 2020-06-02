@@ -1,0 +1,14 @@
+version: '3'
+
+
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+      args:
+        REGISTRY: http://192.168.100.71:4873
+        PROXY: http://192.168.100.140:3128
+    image: front_green_ui
+    ports:
+    - "7777:80"
